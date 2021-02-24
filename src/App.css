@@ -1,28 +1,50 @@
 html,
 body {
   height: 100vh;
-  width: 100vw;
   margin: 0;
+  padding: 0;
   color: white;
+  /* background-color: black; */
 }
 
-.background {
-  background-image: linear-gradient(#070639, #020217);
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-}
-
-.screen {
-  z-index: 1;
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
+body {
+  background-image: linear-gradient(#070639, red);
+  background-attachment: fixed;
 }
 
 h1 {
   padding: 0;
   margin: 0;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.background {
+  background-image: linear-gradient(#070639, red);
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  z-index: 0;
+}
+
+.container-screens {
+  display: flex;
+  flex-direction: column;
+}
+.screen {
+  border: 2px solid white;
+  z-index: 3;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  top: 0;
 }

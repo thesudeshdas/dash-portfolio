@@ -1,10 +1,12 @@
 import React from "react";
+import { AiOutlineMenu } from "react-icons/ai";
 
 function NavigationBar() {
   return (
-    <>
-      <h1> Hello</h1>
-    </>
+    <nav>
+      <h1> Dashthetics </h1>
+      <AiOutlineMenu size="30px" />
+    </nav>
   );
 }
 
